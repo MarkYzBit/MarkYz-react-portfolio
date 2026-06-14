@@ -19,8 +19,8 @@ const PLAYLIST = [
     { id: 4, title: "Fever", artist: "ENHYPEN", src: track4 },
     { id: 5, title: "RUDE!", artist: "Hearts2Hearts", src: track5 },
     { id: 6, title: "พบรัก", artist: "INK WARUNTORN", src: track6 },
-    { id: 7, title: "Aurora Cascade", artist: "Dreamscape", src: track7 },
-    { id: 8, title: "Cosmic Static", artist: "Lo-fi Cosmos", src: track8 },
+    { id: 7, title: "gingersweet", artist: "massobeats", src: track7 },
+    { id: 8, title: "Quiet Bounce", artist: "Adventure", src: track8 },
 ];
 
 const hasThaiText = (text) => /[\u0E00-\u0E7F]/.test(text);
@@ -204,7 +204,7 @@ const GLASS_STYLES = `
 export const MusicPlayer = () => {
     const audioRef = useRef(null);
 
-    const [currentIndex, setCurrentIndex] = useState(3);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(0.6);
     const [isMuted, setIsMuted] = useState(false);
